@@ -1,0 +1,112 @@
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none;}
+img { vertical-align: top; }
+.wrapper{ width: 1200px; margin: 0 auto;}
+.clearfix::after{ content: ''; display: block; clear: both;}
+
+body{ background-color: #000; color: #fff; font-family: '돋움'; }
+/*header*/
+header{ height: 50px; color: #fff; 
+    padding: 30px; line-height: 50px;
+}
+header h1{ display: inline; font-family: 'Indie Flower', cursive;}
+header .info{ float: right; }
+header .info a{ color: #fff; margin-left: 30px; font-family: 'Dosis', sans-serif;}
+header .info a:hover{ border-bottom: 1px solid #fff;}
+
+/*slider*/
+.owl-container img{ height: 500px;}
+
+/*nav*/
+nav{ height: 70px; line-height: 70px; position: absolute;
+    width: 100%; border-bottom: 1px solid #fff;
+    font-family: 'Baloo Tammudu', cursive;
+}
+nav .menu{ width: 800px; margin: 0 auto;}
+nav .menu li{ float: left;}
+nav .menu a{ color: #fff; display: block; width: 200px;
+    text-align: center; font-size: 20px; 
+}
+nav.fixed{ position: fixed; top: 0; left: 0; 
+    background-color: rgba(0,0,0,.6);
+}
+nav .menu a.active{ background: #c13333; color: #000;}
+
+/*section*/
+section .content{ border-bottom: 1px solid #fff; padding: 10px 0;}
+#day01 h2{ margin-top: 70px;}
+h2{ padding: 100px 0 50px; font-size: 20px; text-align: center;
+    font-family: 'Baloo Tammudu', cursive;
+}
+.content .plane { margin-right: 20px;}
+.content_list{ max-width: 1200px; height: 300px;font-family: 'Josefin Sans', sans-serif; margin: 0 auto;}
+.content_list li{ width: calc(50% - 20px); float: left; 
+    border: 1px solid #fff; box-sizing: border-box; margin: 10px;
+    height: 600px;
+}
+.content_list img{width: 100%; height: 300px; }
+.content_list .info{ padding: 10px; font-size: 14px;
+    line-height: 2em;
+}
+.content_list .info button{
+    margin-left: 10px; padding: 3px 5px; border: 1px solid #fff;
+    background: #000; color: #fff; cursor: pointer;
+}
+.content_list .info button a{ color: inherit;}
+.content_list .info button:hover{
+    background-color: #fff; color: #000;
+}
+
+/*footer*/
+.taipei{ height: 500px; background-image: url(../images/taipei.jpg);
+    background-size: cover; background-position: center; 
+    text-align: center; line-height: 800px; 
+}
+.taipei_page{  padding: 20px 30px; background-color: rgba(0,0,0,.5); 
+    border: none; border-radius: 20px; cursor: pointer;
+}
+.taipei_page a{ color: #fff; font-size: 14px; }
+.taipei_page:hover{ background-color: rgba(255,255,255,.7); }
+.taipei_page:hover a{ color: #000; }
+
+/*tablet*/
+@media screen and (max-width:768px){
+    /*nav*/
+    nav{ height: 50px; line-height: 50px; }
+    nav .menu{ width: 480px; }
+    nav .menu a{ width: 120px; font-size: 14px; }
+    
+    /*footer*/
+    .taipei{ height: 400px; line-height: 700px; }
+    
+}
+
+/*mobile*/
+@media screen and (max-width:480px){
+    header .info a{ margin-left: 20px; font-size: 14px; }
+    .owl-container img{ height: 300px;}
+    
+    /*nav*/
+    nav{ height: 50px; line-height: 50px; }
+    nav .menu{ width: 360px; }
+    nav .menu a{ width: 90px; font-size: 14px; }
+
+    
+    /*section*/
+    #day01 h2{ margin-top: 50px;}
+    h2{ padding: 70px 0 30px; font-size: 16px; }
+    .content .plane { margin-right: 10px;}
+    .content_list{ max-width: 1200px;}
+    .content_list li{ width: calc(100% - 20px); float: left;
+        height: auto; 
+    }
+    .content_list img{ height: 200px; }
+    .content_list .info{ padding: 5px; font-size: 12px;}
+    
+    /*footer*/
+    .taipei{ height: 300px; line-height: 500px; }
+    .taipei_page a{ font-size: 12px; }
+}
+
+

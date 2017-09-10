@@ -103,6 +103,9 @@ h2{ padding: 100px 0 50px; font-size: 20px; text-align: center;
     }
     .content_list img{ height: 200px; }
     .content_list .info{ padding: 5px; font-size: 12px;}
+    .content_list .info button{
+            margin: 0 0 10px 5px; 
+        }
     
     /*footer*/
     .taipei{ height: 300px; line-height: 500px; }
